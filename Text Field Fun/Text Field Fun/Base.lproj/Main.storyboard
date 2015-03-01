@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Text_Field_Fun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-tD-xhb">
+                                <rect key="frame" x="16" y="20" width="568" height="560"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hiddenButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="66s-nW-ftJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6b-oe-FaR">
+                                <rect key="frame" x="232" y="28" width="137" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Nf-rM-ho4"/>
+                                    <constraint firstAttribute="width" constant="137" id="Bci-22-EhA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhj-TX-SFE">
+                                <rect key="frame" x="232" y="92" width="137" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIU-bG-Oxm">
+                                <rect key="frame" x="232" y="175" width="137" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I9c-c9-kd8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="hideKeyboard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="o8F-2l-KrD"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-ry-HBu">
+                                <rect key="frame" x="232" y="234" width="137" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Hme-Ch-v3C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Say Name">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SayNameButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jbu-u0-lWD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="rCt-ry-HBu" secondAttribute="bottom" constant="306" id="0FW-cZ-aKg"/>
+                            <constraint firstItem="rCt-ry-HBu" firstAttribute="trailing" secondItem="TIU-bG-Oxm" secondAttribute="trailing" id="27B-Pv-o9T"/>
+                            <constraint firstItem="yhj-TX-SFE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2JX-pb-c7v"/>
+                            <constraint firstItem="TIU-bG-Oxm" firstAttribute="leading" secondItem="yhj-TX-SFE" secondAttribute="leading" id="3wd-qI-jx3"/>
+                            <constraint firstItem="yhj-TX-SFE" firstAttribute="trailing" secondItem="TIU-bG-Oxm" secondAttribute="trailing" id="AJL-lz-kIG"/>
+                            <constraint firstItem="M6b-oe-FaR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="Et3-gd-xiB"/>
+                            <constraint firstItem="rCt-ry-HBu" firstAttribute="top" secondItem="TIU-bG-Oxm" secondAttribute="bottom" constant="29" id="GV9-Ep-YVO"/>
+                            <constraint firstItem="M6b-oe-FaR" firstAttribute="leading" secondItem="yhj-TX-SFE" secondAttribute="leading" id="MnT-kO-tdc"/>
+                            <constraint firstItem="yhj-TX-SFE" firstAttribute="top" secondItem="M6b-oe-FaR" secondAttribute="bottom" constant="14" id="TMB-uW-gVp"/>
+                            <constraint firstItem="rCt-ry-HBu" firstAttribute="leading" secondItem="TIU-bG-Oxm" secondAttribute="leading" id="X7V-XP-ACs"/>
+                            <constraint firstItem="M6b-oe-FaR" firstAttribute="trailing" secondItem="yhj-TX-SFE" secondAttribute="trailing" id="eFu-qq-b3J"/>
+                            <constraint firstItem="TIU-bG-Oxm" firstAttribute="top" secondItem="yhj-TX-SFE" secondAttribute="bottom" constant="8" symbolic="YES" id="xJ6-0Z-9i9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UserLabel" destination="yhj-TX-SFE" id="b3s-9Y-wVb"/>
+                        <outlet property="UserTextField" destination="TIU-bG-Oxm" id="du2-xf-NGG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
